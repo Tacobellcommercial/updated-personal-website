@@ -1,0 +1,93 @@
+<%- include ("Header") -%>
+
+<div class="header-section">
+    <img src="/images/profile_picturelinkedin.png" alt="profile-picture"/>
+
+    <h1 class="title-up">I'm Chris, a passionate programmer.</h1>
+    <p class="title-up">
+      Creating engaging and innovative products is what I do, and bringing them to life is a hobby.
+    </p>
+    <a href="#about" type="button" class="btn btn-outline-primary">About</a>
+
+    <a href="https://www.linkedin.com/in/christopher-pray-23b499258/" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+
+</div>
+
+<div class="skills-section">
+
+
+        <div class="skill-item skill-container-opacity">
+          <i class="fa-solid fa-computer"></i>
+          <h2>Web Developer.</h2>
+          <p>I'm knowledgable on the latest web technologies and experienced making full-stack web apps.</p>
+        </div>
+
+        <div class="skill-item skill-container-opacity">
+          <i class="fa-solid fa-robot"></i>
+          <h2>Python Engineer.</h2>
+          <p>Fluent in Python, including data science, analytics, AI and machine learning, with a desire to make change.</p>
+        </div>
+
+        <div class="skill-item skill-container-opacity">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <h2>Driven.</h2>
+          <p>I want to make positive difference in the world through technology, and would love to get to work with you.</p>
+
+        </div>
+
+
+</div>
+
+<div class="how-it-started" id="about">
+  <div class="his-container">
+    <img src="images/computer_icon.png" alt="img"/>
+
+    <div class="his-info">
+      <h2>Design and Development</h2>
+      <p>I started learning to code when I was 11 years old because I wanted to make my own video games. Over time, I have gained a wealth of experience designing and developing web applications and python programs. You can check out my projects here.</p>
+    </div>
+  </div>
+
+  <div class="his-container">
+    <div class="his-info">
+      <h2>Work Experience</h2>
+      <p>Over the years, I've built strong projects in many technologies like Node.js and React. I've even landed my first interrnship, and gave my skills to volunteer at various organizations that specialize in helping others for the common good.</p>
+    </div>
+    <img id="left-img" src="images/green_double_circle_check_mark.jpg" alt="img"/>
+  </div>
+
+</div>
+
+<div class="cta">
+    <h1>Get in touch and let's work</h1>
+    <h2>Either to hire/work, or talk about whatever :)</h2>
+    <a href="https://www.linkedin.com/in/christopher-pray-23b499258/" class="btn btn-lg btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <a href="mailto:praychristopher109@gmail.com" class="btn btn-lg btn-outline-primary"><i class="fa-solid fa-envelope"></i> Email</a>
+</div>
+
+<script>
+  header_title = document.querySelector(".header-section h1");
+  paragraph_subtitle = document.querySelector(".header-section p")
+
+  window.addEventListener("load", (event)=>{
+    setTimeout(()=>{
+      header_title.classList.remove("title-up");
+      paragraph_subtitle.classList.remove("title-up");
+    }, 250)
+  })
+
+  const skillContainers = document.querySelectorAll(".skill-item")
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if (entry.isIntersecting){
+        entry.target.classList.remove("skill-container-opacity")
+      }
+    })
+  })
+
+  skillContainers.forEach(e=>{
+    observer.observe(e);
+  })
+
+</script>
+<%- include ("Footer") -%>

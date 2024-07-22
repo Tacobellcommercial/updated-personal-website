@@ -1,0 +1,708 @@
+
+body{
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+/* NAVBAR */
+
+.navbar{
+  /* position: fixed;
+  z-index: 2;
+  width: 100%; */
+}
+
+
+.navbar-brand i{
+  font-size: 2.25rem;
+}
+
+.navbar-nav{
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*center navbar when it's not collapsed*/
+.navbar-expand-lg .navbar-nav{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*HOME PAGE SECTION*/
+/*HOME PAGE SECTION*/
+/*HOME PAGE SECTION*/
+
+.header-section{
+  padding: 12.5% 0%;
+  text-align: center;
+  color: white;
+
+  /*#5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #79b3f4, #8aa7ec, #9a9ae1, #aa8fd8, #ba83ca, #c777b9, #d16ba5*/
+
+  background: linear-gradient(231deg, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 38s ease infinite;
+  -moz-animation: AnimationName 38s ease infinite;
+  animation: AnimationName 38s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+
+
+.header-section img{
+  object-fit: fill;
+  width: 7.5rem;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 1%;
+}
+
+.title-up{
+  padding-top: 3%;
+  opacity: 0;
+}
+
+.header-section h1, .header-section p{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: padding 1s, opacity 0.5s;
+}
+
+.header-section h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  width: 50rem;
+}
+
+.header-section p{
+  font-family: "Roboto Mono", sans-serif;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 50rem;
+  font-weight: bolder;
+}
+
+.header-section button{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+
+@media (max-width: 1325px){
+  .header-section h1{
+    font-size: 3rem;
+  }
+
+  .header-section p{
+    width: 40rem;
+  }
+}
+
+@media (max-width: 1000px){
+
+  .header-section h1{
+    font-size: 2.75rem;
+  }
+
+  .header-section p{
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .header-section img{
+    width: 5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 800px){
+
+  .header-section h1{
+    font-size: 2.25rem;
+    width: 90%;
+  }
+
+  .header-section p{
+    width: 75%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 550px){
+
+  .header-section h1{
+    font-size: 1.75rem;
+  }
+
+  .header-section p{
+    width: 90%;
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  .header-section img{
+    width: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 400px){
+
+  .header-section img{
+    width: 3.5rem;
+    margin-top: 3rem;
+  }
+
+  .header-section h1{
+    width: 100%;
+    font-size: 1.7rem;
+  }
+
+  .header-section p{
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 100%;
+  }
+}
+
+
+/*skills section*/
+
+.skills-section{
+  padding: 7.5% 0%;
+  text-align: center;
+
+}
+
+.skill-item{
+  display: inline-table;
+  transition: 1.85s opacity;
+  width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+.skill-container-opacity{
+  opacity: 0;
+}
+
+.skills-section i{
+  font-size: 3rem;
+}
+
+.skills-section h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25rem;
+}
+
+.skills-section p{
+  font-family: "Ubuntu", sans-serif;
+  color: gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 1750px){
+  .skill-item{
+    width: 25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1350px){
+  .skill-item{
+    width: 19rem;
+  }
+
+  .skill-item h2{
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 1075px){
+  .skill-item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 450px){
+  .skill-item{
+    width: 90%;
+  }
+}
+
+/*How it Started*/
+
+.how-it-started{
+  background-color: #69bff8;
+  padding: 5%;
+  color: white;
+}
+
+.his-container{
+  width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.his-container img{
+  width: 15%;
+  border-radius: 50%;
+  margin-top: 7.5%;
+  margin-right: 2.5%;
+}
+
+.his-container h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.his-container p{
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 2.75rem;
+  font-size: 1.3rem;
+}
+
+.his-container .his-info{
+  width: 75%;
+  display: inline-table;
+}
+
+#left-img{
+  margin-left: 2.5%;
+  margin-right: 0;
+}
+
+@media (max-width: 1250px){
+  .his-container{
+    width: 50rem;
+  }
+
+  .his-container img{
+    margin-top: 15%;
+  }
+
+  .his-container p{
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 950px){
+
+  .his-container{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  .his-container img{
+    margin: 0;
+  }
+
+  .his-container .his-info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 700px){
+
+  .how-it-started{
+    padding-bottom: 0;
+  }
+
+  .his-container img{
+    width: 18%;
+    margin-bottom: 1rem;
+  }
+
+  .his-container h2{
+    font-size: 1.75rem;
+  }
+
+  .his-container p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .his-container img{
+    width: 22.5%;
+  }
+
+  .his-container h2{
+    font-size: 1.5rem;
+  }
+
+  .his-container p{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
+
+.cta{
+  padding: 3.5% 10% 5% 10%;
+  text-align: center;
+}
+
+.cta h1{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1.75rem;
+}
+
+.cta h2{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  margin-bottom: 1.75rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta a{
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  padding: 0.5% 1% 0.5% 1%;
+}
+
+@media (max-width: 1150px){
+  .cta h1{
+    font-size: 2.5rem;
+  }
+
+  .cta h2{
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 850px){
+  .cta h1{
+    font-size: 2.25rem;
+  }
+
+  .cta h2{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 650px){
+
+  .cta{
+    padding: 1% 1% 7.5% 1%;
+  }
+
+  .cta h1{
+    font-size: 1.75rem;
+  }
+
+  .cta h2{
+    font-size: 1rem;
+  }
+}
+
+
+/*PROJECTS*/
+
+.projects{
+  padding: 5%;
+}
+
+#project-h1{
+  width: 77rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-item{
+  width: 77rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.project-item h1{
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-item p{
+  padding: 1.5% 0%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+
+.project-item img{
+  width: 30%;
+  padding: 0.25%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.project-item a{
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.skills-tags{
+  display: block;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.skills-tags button{
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+
+@media (max-width: 1450px){
+  #project-h1{
+    width: 50rem;
+  }
+
+  .project-item{
+    width: 50rem;
+  }
+
+  .project-item h1{
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 950px){
+  #project-h1{
+    width: 38rem;
+  }
+  .project-item{
+    width: 38rem;
+  }
+}
+
+@media (max-width: 730px){
+  #project-h1{
+    width: 95%;
+  }
+  .project-item{
+    width: 95%;
+  }
+
+  .project-item img{
+    width: 45% !important;
+  }
+
+  .project-item .single-image{
+    width: 70% !important;
+  }
+
+  .project-item h1{
+    font-size: 1.85rem;
+  }
+
+  .project-item p{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px){
+
+
+  .project-item p{
+    font-size: 0.75rem;
+  }
+}
+
+/*WORK EXPERIENCE*/
+
+.work-experience{
+  padding: 7%;
+  width: 77rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-experience h1{
+  margin-bottom: 2rem;
+}
+
+.work-experience-item{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 2%;
+  margin-bottom: 2rem;
+}
+
+.work-experience-item h2{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.work-experience-item .work-info{
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.work-experience-item img{
+  width: 30%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 1%;
+}
+
+.work-experience-item a{
+  text-decoration: none;
+}
+
+.work-experience-item p{
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media (max-width: 1310px){
+  .work-experience{
+    width: 58rem;
+  }
+}
+
+@media (max-width: 1000px){
+  .work-experience{
+    width: 50rem;
+  }
+}
+
+@media (max-width: 850px){
+  .work-experience{
+    width: 40rem;
+  }
+}
+
+@media (max-width: 650px){
+  .work-experience{
+    width: 100%;
+  }
+
+  .work-experience-item p{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px){
+  .work-experience-item p{
+    font-size: 0.75rem;
+  }
+}
+
+/*EDUCATION*/
+
+.education{
+  padding: 7%;
+  width: 77rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-item{
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2%;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+}
+
+.education-item .education-information{
+  display: block;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.education-information .inner{
+  width: 45%;
+  display: inline-table;
+}
+
+.education-item img{
+  width: 35%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.education-item p{
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+/*ERROR*/
+
+.error{
+  padding: 2.5%;
+  text-align: center;
+}
+
+.error h1{
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: bolder;
+}
+
+.error p{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+
+.error img{
+  width: 10rem;
+}
